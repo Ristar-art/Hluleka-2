@@ -39,13 +39,20 @@
         orientation: "auto left"
     }).datepicker('update', new Date());
 
-    $("#datepicker12").datepicker({ 
+    $("#2nd_Choice").datepicker({ 
         autoclose: true, 
         todayHighlight: true,
         orientation: "auto left"
     }).datepicker('update', new Date());
 
-    $("#datepicker123").datepicker({ 
+    
+    $("#Date_of_Arrival").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true,
+        orientation: "auto left"
+    }).datepicker('update', new Date());
+
+    $("#Date_of_Arrival").datepicker({ 
         autoclose: true, 
         todayHighlight: true,
         orientation: "auto left"
