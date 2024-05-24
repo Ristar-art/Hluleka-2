@@ -25,6 +25,38 @@
 	<!-- link to revolution css  -->
 	<link rel="stylesheet" type="text/css" href="vendors/revolution/css/settings.css">
 </head>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+			var galleryImages = document.querySelectorAll('.gallery-image');
+			var enlargedImageContainer = document.getElementById('enlarged-image-container');
+			var enlargedImage = document.getElementById('enlarged-image');
+			var closeEnlargedImage = document.getElementById('close-enlarged-image');
+			galleryImages.forEach(function (image) {
+				image.addEventListener('click', function () {
+					enlargedImage.src = this.src;
+					enlargedImageContainer.style.display = 'block';
+				});
+			});
+			closeEnlargedImage.addEventListener('click', function () {
+				enlargedImageContainer.style.display = 'none';
+			});
+			window.addEventListener('resize', function () {
+				adjustEnlargedImageSize();
+			});
+			function adjustEnlargedImageSize() {
+				var maxHeight = window.innerHeight * 0.8;
+				var maxWidth = window.innerWidth * 0.8;
+				var aspectRatio = enlargedImage.naturalHeight / enlargedImage.naturalWidth;
+				if (maxWidth / maxHeight > aspectRatio) {
+					maxHeight = maxWidth / aspectRatio;
+				} else {
+					maxWidth = maxHeight * aspectRatio;
+				}
+				enlargedImage.style.maxWidth = maxWidth + 'px';
+				enlargedImage.style.maxHeight = maxHeight + 'px';
+			}
+		});
+</script>
 <body>
 	<div class="preloader" id="pageLoad">
 		<div class="holder">
@@ -759,101 +791,148 @@
 									<!-- gallery list -->
 									<ul class="gallery-list gallery-with-icon">
 										<li>
-											<img src="img/banner/mehloding1.jpg" height="165" width="170" alt="image description">
-
-											<!-- <a href="#" class="thumbnail"> -->
-																								<!-- <span class="hover icon-bird"></span> -->
-												<!-- <span class="info">aerial</span> -->
-											<!-- </a> -->
+											<img src="img/banner/mehloding1.jpg" class="gallery-image" height="165" width="170" alt="image description">
+											<!-- <a href="#" class="thumbnail">
+												<span class="hover icon-bird"></span>
+												<span class="info">aerial</span>
+											</a> -->
 										</li>
+										<div id="enlarged-image-container">
+											<span id="close-enlarged-image">&times;</span>
+											<img id="enlarged-image">
+										</div>
 										<li>
-											<img src="img/banner/mehloding2.jpg" height="165" width="170" alt="image description">
+											<img src="img/banner/mehloding2.jpg" class="gallery-image" height="165" width="170" alt="image description">
 
 											<!-- <a href="#" class="thumbnail"> -->
 																								<!-- <span class="hover icon-peak"></span> -->
 												<!-- <span class="info">land</span> -->
 											<!-- </a> -->
 										</li>
+										<div id="enlarged-image-container">
+											<span id="close-enlarged-image">&times;</span>
+											<img id="enlarged-image">
+										</div>
 										<li>
-											<img src="img/banner/mehloding3.jpg" height="165" width="170" alt="image description">
+											<img src="img/banner/mehloding3.jpg" class="gallery-image"height="165" width="170" alt="image description">
 
 											<!-- <a href="#" class="thumbnail"> -->
 																								<!-- <span class="hover icon-water"></span> -->
 												<!-- <span class="info">water</span> -->
 											<!-- </a> -->
 										</li>
+										<div id="enlarged-image-container">
+											<span id="close-enlarged-image">&times;</span>
+											<img id="enlarged-image">
+										</div>
 										<li>
-												<img src="img/banner/20240407_123942.JPG" height="165" width="170" alt="image description">
+												<img src="img/banner/20240407_123942.JPG" class="gallery-image" height="165" width="170" alt="image description">
 
 											<!-- <a href="#" class="thumbnail"> -->
 																							<!-- <span class="hover icon-asia"></span> -->
 												<!-- <span class="info">asia</span> -->
 											<!-- </a> -->
 										</li>
+										<div id="enlarged-image-container">
+											<span id="close-enlarged-image">&times;</span>
+											<img id="enlarged-image">
+										</div>
 										<li>
-											<img src="img/banner/20240407_124746.JPG" height="165" width="170" alt="image description">
+											<img src="img/banner/20240407_124746.JPG" class="gallery-image" height="165" width="170" alt="image description">
 
 											<!-- <a href="#" class="thumbnail"> -->
 																								<!-- <span class="hover icon-asia"></span> -->
 												<!-- <span class="info">asia</span> -->
 											<!-- </a> -->
 										</li>
+										<div id="enlarged-image-container">
+											<span id="close-enlarged-image">&times;</span>
+											<img id="enlarged-image">
+										</div>
 										<li>
-											<img src="img/banner/Hiking-activities.JPG" height="165" width="170" alt="image description">
+											<img src="img/banner/Hiking-activities.JPG" class="gallery-image" height="165" width="170" alt="image description">
 
 											<!-- <a href="#" class="thumbnail"> -->
 																								<!-- <span class="hover icon-asia"></span> -->
 												<!-- <span class="info">asia</span> -->
 											<!-- </a> -->
 										</li>
+										<div id="enlarged-image-container">
+											<span id="close-enlarged-image">&times;</span>
+											<img id="enlarged-image">
+										</div>
 										<li>
-											<img src="img/banner/20240407_122036.JPG" height="165" width="170" alt="image description">
+											<img src="img/banner/20240407_122036.JPG" class="gallery-image" height="165" width="170" alt="image description">
 
 											<!-- <a href="#" class="thumbnail"> -->
 																								<!-- <span class="hover icon-asia"></span> -->
 												<!-- <span class="info">asia</span> -->
 											<!-- </a> -->
 										</li>
+										<div id="enlarged-image-container">
+											<span id="close-enlarged-image">&times;</span>
+											<img id="enlarged-image">
+										</div>
 										<li>
-											<img src="img/banner/20240407_114001.JPG" height="165" width="170" alt="image description">
+											<img src="img/banner/20240407_114001.JPG" class="gallery-image" height="165" width="170" alt="image description">
 
 											<!-- <a href="#" class="thumbnail"> -->
 																								<!-- <span class="hover icon-asia"></span> -->
 												<!-- <span class="info">asia</span> -->
 											<!-- </a> -->
 										</li>
+										<div id="enlarged-image-container">
+											<span id="close-enlarged-image">&times;</span>
+											<img id="enlarged-image">
+										</div>
 										<li>
-											<img src="img/banner/20240407_100825.JPG" height="165" width="170" alt="image description">
+											<img src="img/banner/20240407_100825.JPG" class="gallery-image" height="165" width="170" alt="image description">
 
 											<!-- <a href="#" class="thumbnail"> -->
 																								<!-- <span class="hover icon-asia"></span> -->
 												<!-- <span class="info">asia</span> -->
 											<!-- </a> -->
 										</li>
+										<div id="enlarged-image-container">
+											<span id="close-enlarged-image">&times;</span>
+											<img id="enlarged-image">
+										</div>
 										<li>
-											<img src="img/banner/20240408_093133.JPG" height="165" width="170" alt="image description">
+											<img src="img/banner/20240408_093133.JPG" class="gallery-image" height="165" width="170" alt="image description">
 
 											<!-- <a href="#" class="thumbnail"> -->
 																								<!-- <span class="hover icon-asia"></span> -->
 												<!-- <span class="info">asia</span> -->
 											<!-- </a> -->
 										</li>
+										<div id="enlarged-image-container">
+											<span id="close-enlarged-image">&times;</span>
+											<img id="enlarged-image">
+										</div>
 										<li>
-											<img src="img/banner/20240408_082335.JPG" height="165" width="170" alt="image description">
+											<img src="img/banner/20240408_082335.JPG" class="gallery-image" height="165" width="170" alt="image description">
 
 											<!-- <a href="#" class="thumbnail"> -->
 																								<!-- <span class="hover icon-asia"></span> -->
 												<!-- <span class="info">asia</span> -->
 											<!-- </a> -->
 										</li>
+										<div id="enlarged-image-container">
+											<span id="close-enlarged-image">&times;</span>
+											<img id="enlarged-image">
+										</div>
 										<li>
-											<img src="img/banner/20240408_082325.JPG" height="165" width="170" alt="image description">
+											<img src="img/banner/20240408_082325.JPG" class="gallery-image" height="165" width="170" alt="image description">
 
 											<!-- <a href="#" class="thumbnail"> -->
 																								<!-- <span class="hover icon-asia"></span> -->
 												<!-- <span class="info">asia</span> -->
 											<!-- </a> -->
 										</li>
+										<div id="enlarged-image-container">
+											<span id="close-enlarged-image">&times;</span>
+											<img id="enlarged-image">
+										</div>
 										<!-- <li>
 											<a href="#" class="thumbnail">
 												<img src="img/gallery/img-05.jpg" height="165" width="170" alt="image description">
