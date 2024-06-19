@@ -724,7 +724,7 @@ blockquote.normal {
 
 .default-page #header.default-white-header .logo,
 #header.default-white-header .logo {
-	border-right-color: #eaeaea;
+	/* border-right-color: #eaeaea; */
 }
 
 .default-page #header.default-white-header .logo .normal,
@@ -7177,7 +7177,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 }
 
 .default-page .logo {
-	border-right-color: #181818;
+	/* border-right-color: #181818; */
 }
 
 .default-page .header-right .login-holder > a:hover,
@@ -10254,7 +10254,7 @@ blockquote.normal {
 	margin: 0;
 	padding: 25px 15px 25px 0;
 	float: left;
-	border-right: 1px solid #2d2d2d;
+	/* border-right: 1px solid #2d2d2d; */
 }
 
 .logo a {
@@ -11489,7 +11489,7 @@ h4,
 }
 
 #header.fixed-position .logo {
-	border-right-color: #181818;
+	/* border-right-color: #181818; */
 }
 
 #header.fixed-position .logo a {
@@ -11524,7 +11524,7 @@ h4,
 
 .default-page #header.white-header.fixed-position .logo,
 #header.white-header.fixed-position .logo {
-	border-right-color: #eaeaea;
+	/* border-right-color: #eaeaea; */
 }
 
 .default-page #header.white-header.fixed-position .logo .normal,
@@ -11554,12 +11554,12 @@ h4,
 
 .default-page #header.default-white-header.fixed-position,
 #header.default-white-header.fixed-position {
-	border-bottom: 1px solid #e2e2e2;
+	/* border-bottom: 1px solid #e2e2e2; */
 }
 
 .default-page #header.default-white-header.fixed-position .logo,
 #header.default-white-header.fixed-position .logo {
-	border-right-color: #eaeaea;
+	/* border-right-color: #eaeaea; */
 }
 
 #header.fixed-position .navbar-default .navbar-nav > li > a {

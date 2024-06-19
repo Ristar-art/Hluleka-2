@@ -3976,7 +3976,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-inverse .divider-vertical {
   border-left-color: #111111;
-  border-right-color: #222222;
+  /* border-right-color: #222222; */
 }
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,

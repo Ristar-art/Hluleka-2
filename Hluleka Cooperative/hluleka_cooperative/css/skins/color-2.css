@@ -721,7 +721,7 @@
 }
 
 .logo {
-	border-right: 1px solid #3d3d3d;
+	/* border-right: 1px solid #3d3d3d; */
 }
 
 .default-page #header.white-header .logo,
