@@ -1415,7 +1415,8 @@ blockquote.normal {
 
 #activity-hiking {
 	background-image: url('../img/banner/heritage4.jpg');
-}
+	filter: blur(3px); 
+  }
 
 #activity-jungle {
 	background-image: url('../img/banner/img-12.jpg');
