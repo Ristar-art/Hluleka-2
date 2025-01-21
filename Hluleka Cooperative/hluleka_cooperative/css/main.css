@@ -10357,17 +10357,18 @@ blockquote.normal {
 .logo {
 	width: 180px;
 	margin: 0;
-	padding: 25px 15px 25px 0;
+	/* padding: 25px 15px 25px 0; */
 	float: left;
 	/* border-right: 1px solid #2d2d2d; */
+	/* background-color: #136ad5; */
 }
 
 .logo a {
-	width: 120px;
+	width: 80px;
 }
 
 .logo img {
-	width: 100%;
+	width: 80%;
 }
 
 .default-page #header.white-header.fixed-position .navbar-default .v-divider,
